@@ -17,9 +17,9 @@
         "display2Font": "Roboto Slab",
         "display2Size": 2.25,
         "display5Font": "Roboto",
-        "display5Size": 1.5,
+        "display5Size": "1.8",
         "display6Font": "Roboto",
-        "display6Size": "1.4",
+        "display6Size": "1.6",
         "display4Font": "Roboto",
         "display4Size": 1,
         "isScrollToTopButton": true
