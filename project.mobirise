@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page9.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "innovationamp",
       "title": "InnovationAMP",
@@ -61,8 +61,7 @@
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "cookiesAlert": false,
-    "gdpr": false,
-    "canonical-url": false
+    "gdpr": false
   },
   "pages": {
     "index.html": {
@@ -2120,53 +2119,6 @@
           "_customHTML": "<section class=\"header4 video-with-lightbox\" group=\"Headers\" plugins=\"amp-main,amp-lightbox,amp-youtube\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <header>Content</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Divider\" name=\"showDivider\" condition=\"showTitle\">\n        <input type=\"range\" inline title=\"Divider Width\" name=\"divider\" min=\"5\" max=\"250\" step=\"5\" value=\"30\" condition=\"showDivider && showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Play Color\" name=\"BgPlayColor\" value=\"#ffffff\">\n        <input type=\"range\" inline title=\"Btn PLay Size\" name=\"playSize\" min=\"16\" max=\"32\" value=\"16\" step=\"2\">\n        <input type=\"color\" title=\"Accent Color\" name=\"accentColor\" value=\"#031b4e\">\n        <input type=\"checkbox\" title=\"Show Signature\" name=\"showSignature\" checked>\n        <select title=\"Align\" name=\"alignTitle\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <header>Video</header>\n        <input type=\"text\" title=\"Vimeo Video URL\" name=\"videoUrl\" value=\"https://vimeo.com/440397329\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/istockphoto-1079548880-2000x1333.jpeg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#4c4c4d\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#454545\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"wrap\" mbr-class=\"{'align-center' : alignTitle == 2, 'align-right' : alignTitle == 3}\">\n        <div class=\"text__block\">\n                    <h3 mbr-if=\"showTitle\" class=\"mbr-fonts-style mbr-section-title video__title mbr-bold mbr-white\" mbr-theme-style=\"display-1\" data-app-selector=\".video__title\">WHO WE ARE</h3>\n                    <span class=\"divider\" mbr-if=\"showDivider && showTitle\"></span>\n                   <p class=\"mbr-fonts-style card__text mbr-white\" mbr-class=\"{'mbr-pt-1' : !showDivider}\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card__text\">Click on the icon to change it. If you add a link to your icon, when you click on it, \n<br>your link will be opened instead of a pop-up video</p>\n        </div>\n        <amp-lightbox id=\"my-lightbox\" layout=\"nodisplay\">\n          <div class=\"lightbox\" on=\"tap:my-lightbox.close\" role=\"button\" tabindex=\"0\">\n            <div class=\"container\">\n                <a class=\"close__lightbox\" role=\"button\" data-dismiss=\"modal\">\n                    <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont close__btn\"></span>\n                </a>\n                <div class=\"video-block\">\n                    <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\" class=\"mobirise-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                    </amp-youtube>\n                </div>\n            </div>\n          </div>\n        </amp-lightbox>\n        \n        <div class=\"play__wrap\">\n             <!-- mbr-icon -->\n            <div class=\"icon-wrap rounded mbr-jc-c mbr-align-center\">\n            <a href=\"https://vimeo.com/440397329\"><span mbr-icon class=\"popup-btn amp-iconfont fa-play fa\" on=\"tap:my-lightbox\" role=\"button\" tabindex=\"0\" data-toolbar=\"-mbrLink\"></span></a>\n                <span class=\"circle rounded\"></span>\n                <span class=\"circle rounded\"></span>\n                <span class=\"circle rounded\"></span>\n                <span class=\"circle rounded\"></span>\n            </div>\n            <p class=\"icon-sign mbr-fonts-style mbr-white mbr-semibold\" mbr-theme-style=\"display-6\" mbr-if=\"showSignature\" data-app-selector=\".icon-sign\">\n                Watch Video\n                \n            </p>\n        </div>\n        <div class=\"mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\"><a class=\"btn btn-md btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">\n            <span class=\"mbrib-right mbr-iconfont mbr-iconfont-btn\"></span>\n            <span class=\"btn__hover\">Read More</span></a></div>\n      \n    </div>\n</div>\n</section>",
           "_cid": "rJIpPEmvFq",
           "_anchor": "header4-k",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 10px)",
-            "padding-bottom": "(@paddingBottom * 10px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "& when (@showIcon)": {
-              ".item__icon": {
-                "width": "((@iconSize * 1px) + 30px)",
-                "height": "((@iconSize * 1px) + 30px)",
-                "background-color": "@bgIcon",
-                "margin-right": "25px",
-                ".mbr-iconfont": {
-                  "font-size": "(@iconSize * 1px)",
-                  "width": "(@iconSize * 1px)",
-                  "color": "@colorIcon"
-                }
-              }
-            },
-            ".video__title": {
-              "display": "inline-flex"
-            },
-            ".title__block, .video-block": {
-              "margin-bottom": "40px",
-              "padding": "0"
-            }
-          },
-          "_name": "video",
-          "_customHTML": "<section >\n    <figure class=\"mbr-figure align-center container\">\n        <div class=\"video-block\" style=\"width: 100%;\">\n            <div  style=\"width: 100%;\">\n                <iframe src=\"https://player.vimeo.com/video/440397329\" width=\"1920\" height=\"1080\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "s6Ouc6GvMU",
-          "_anchor": "video-ap",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_protectedParams": [],
@@ -9693,7 +9645,7 @@
             }
           },
           "_name": "text3",
-          "_customHTML": "<section class=\"text3\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <!--  -->\n        <header>Text</header>\n         <input type=\"range\" title=\"Icon Size\" name=\"symbolSize\" min=\"20\" max=\"52\" step=\"4\" value=\"40\" condition=\"text1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"title\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"subtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Icon\" name=\"showIcon\">\n        <input type=\"color\" title=\"Icon Color\" value=\"#ffffff\" name=\"iconColor\" condition=\"showIcon\" selected>\n        <input type=\"range\" title=\"Icon Size\" name=\"iconSize\" min=\"20\" max=\"50\" step=\"2\" value=\"40\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"color\" title=\"Background Color\" value=\"#851618\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/ect24.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3b7eff\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type == 'image'\">\n</mbr-parameters>\n    \n   <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n<div class=\"container\"> \n    <div class=\"mbr-row \">\n        <div class=\"service__icon mbr-col-sm-12 align-center\" mbr-if=\"showIcon\">\n      <span class=\"mbr-iconfont mbr-iconfont-btn mbrib-question\" mbr-icon></span>\n        </div>\n    <div class=\"mbr-col-sm-12 mbr-col-md-7 mbr-col-lg-8 align-left\">\n        <div class=\"flex-column\">\n        <h3 class=\"mbr-fonts-style mbr-black mbr-section-title title mbr-bold\" mbr-theme-style=\"display-2\" data-app-selector=\".title\" mbr-if=\"title\">WE ARE HERE TO HELP</h3>\n        <h4 class=\"mbr-fonts-style subtitle\" mbr-theme-style=\"display-6\" data-app-selector=\".subtitle\" mbr-if=\"subtitle\">Lorem ipsum, Lorem ipsum , Lorem ipsum , Lorem ipsum .&nbsp;</h4>\n        </div>\n    </div>\n         <div class=\"mbr-section-btn mbr-jc-e mbr-align-center mbr-flex flex-wrap mbr-col-sm-12 mbr-col-md-4 mbr-col-lg-3\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\"><a class=\"btn btn-md mbr-mt-1 btn-danger-outline\" href=\"page10.html#form1-5o\" data-app-placeholder=\"Type Text\"><span class=\"mbrib-right mbr-iconfont mbr-iconfont-btn\"></span><span class=\"btn__hover\">Get a Quote</span></a></div>\n    </div>\n    </div>\n\n</section>",
+          "_customHTML": "<section class=\"text3\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <!--  -->\n        <header>Text</header>\n         <input type=\"range\" title=\"Icon Size\" name=\"symbolSize\" min=\"20\" max=\"52\" step=\"4\" value=\"40\" condition=\"text1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"title\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"subtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Icon\" name=\"showIcon\">\n        <input type=\"color\" title=\"Icon Color\" value=\"#ffffff\" name=\"iconColor\" condition=\"showIcon\" selected>\n        <input type=\"range\" title=\"Icon Size\" name=\"iconSize\" min=\"20\" max=\"50\" step=\"2\" value=\"40\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"color\" title=\"Background Color\" value=\"#851618\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/ect24.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3b7eff\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type == 'image'\">\n</mbr-parameters>\n    \n   <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n<div class=\"container\"> \n    <div class=\"mbr-row \">\n        <div class=\"service__icon mbr-col-sm-12 align-center\" mbr-if=\"showIcon\">\n      <span class=\"mbr-iconfont mbr-iconfont-btn mbrib-question\" mbr-icon></span>\n        </div>\n    <div class=\"mbr-col-sm-12 mbr-col-md-7 mbr-col-lg-8 align-left\">\n        <div class=\"flex-column\">\n        <h3 class=\"mbr-fonts-style mbr-black mbr-section-title title mbr-bold\" mbr-theme-style=\"display-2\" data-app-selector=\".title\" mbr-if=\"title\">WE ARE HERE TO HELP</h3>\n        <h4 class=\"mbr-fonts-style subtitle\" mbr-theme-style=\"display-6\" data-app-selector=\".subtitle\" mbr-if=\"subtitle\">Don’t take our word for it, let us prove it.</h4>\n        </div>\n    </div>\n         <div class=\"mbr-section-btn mbr-jc-e mbr-align-center mbr-flex flex-wrap mbr-col-sm-12 mbr-col-md-4 mbr-col-lg-3\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\"><a class=\"btn btn-md mbr-mt-1 btn-danger-outline\" href=\"page10.html#form1-5o\" data-app-placeholder=\"Type Text\"><span class=\"mbrib-right mbr-iconfont mbr-iconfont-btn\"></span><span class=\"btn__hover\">Get a Quote</span></a></div>\n    </div>\n    </div>\n\n</section>",
           "_anchor": "text3-94",
           "_isUserblock": true,
           "_sourceTheme": "innovationamp",
