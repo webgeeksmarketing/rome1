@@ -1508,7 +1508,7 @@
             },
             ".gallery__title": {
               "display": "inline-flex",
-              "color": "#851618"
+              "color": "#031b4e"
             },
             ".title__block": {
               "margin-bottom": "40px"
